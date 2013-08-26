@@ -4,7 +4,7 @@
 
   <parent>
   	<groupId>org.semanticsoft</groupId>
-  	<artifactId>org.semanticsoft.vaaclipse</artifactId>
+  	<artifactId>org.semanticsoft.vaaclipsedemo</artifactId>
   	<version>0.0.1-SNAPSHOT</version>
   	<relativePath>..</relativePath>
   </parent>

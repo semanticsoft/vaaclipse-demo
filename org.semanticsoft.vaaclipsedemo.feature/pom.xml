@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.semanticsoft</groupId>
-		<artifactId>org.semanticsoft.vaaclipse</artifactId>
+		<artifactId>org.semanticsoft.vaaclipsedemo</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>org.semanticsoft.vaaclipsedemo.feature</artifactId>

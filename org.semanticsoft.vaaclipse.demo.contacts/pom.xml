@@ -4,7 +4,7 @@
   <version>1.0.1-SNAPSHOT</version>
   <packaging>eclipse-plugin</packaging>
   <parent>
-  	<artifactId>org.semanticsoft.vaaclipse</artifactId>
+  	<artifactId>org.semanticsoft.vaaclipsedemo</artifactId>
   	<version>0.0.1-SNAPSHOT</version>
   	<groupId>org.semanticsoft</groupId>
   	<relativePath>..</relativePath>
