@@ -47,6 +47,7 @@ public class InstallNewSoftwareHandler {
 
 		basicUI.initUI();
 		window.setContent((Component) basicUI.getUIComponent());
+		window.center();
 		/*VerticalLayout mainLayout = new VerticalLayout();
 		window.setContent(mainLayout);
 		window.setModal(true);
