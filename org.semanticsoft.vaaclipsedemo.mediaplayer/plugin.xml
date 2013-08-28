@@ -42,8 +42,12 @@
       	</processor>
           <processor
             beforefragment="true"
-            class="org.semanticsoft.vaaclipse.p2.processor.P2Processor">
+            class="org.semanticsoft.vaaclipse.p2.processor.P2InstallProcessor">
       	</processor>
+          <processor
+                beforefragment="true"
+                class="org.semanticsoft.vaaclipse.p2.processor.P2UninstallProcessor">
+          </processor>
    </extension>
    
    <extension
