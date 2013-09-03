@@ -77,6 +77,7 @@
         <children xsi:type="menu:HandledMenuItem" xmi:id="_xC5CRzDGEeKcFLjGBzrJfw" label="About" command="_xC4bQjDGEeKcFLjGBzrJfw"/>
       <children xsi:type="menu:DirectMenuItem" xmi:id="_xC5CRzDGEeKcFLjGBzrJhh" label="Install New Software" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.mediaplayer/org.semanticsoft.vaaclipsedemo.mediaplayer.handlers.help.InstallNewSoftwareHandler"/>
       <children xsi:type="menu:DirectMenuItem" xmi:id="_xC5CRzDGEeKcFLjGBzrJh1" label="Uninstall Software" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.mediaplayer/org.semanticsoft.vaaclipsedemo.mediaplayer.handlers.help.UninstallSoftwareHandler"/>
+      <children xsi:type="menu:DirectMenuItem" xmi:id="_xC5CRzDGEeKcFLjGBzrJh1" label="Avaible Software Sites" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.mediaplayer/org.semanticsoft.vaaclipsedemo.mediaplayer.handlers.help.AvaibleSoftwareSitesHandler"/>
       </children>
     </mainMenu>
     <sharedElements xsi:type="basic:Part" xmi:id="_Odwi0DDdEeKcFLjGBzrJfw" elementId="org.semanticsoft.vaaclipsedemo.mediaplayer.part.player" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.mediaplayer/org.semanticsoft.vaaclipsedemo.mediaplayer.views.PlayerView" label="Player" iconURI="platform:/plugin/org.semanticsoft.vaaclipsedemo.mediaplayer/icons/player.png" tooltip="Player"/>
