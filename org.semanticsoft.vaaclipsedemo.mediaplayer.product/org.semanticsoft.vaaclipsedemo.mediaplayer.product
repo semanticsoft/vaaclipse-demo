@@ -27,6 +27,7 @@
       <plugin id="com.ibm.icu"/>
       <plugin id="com.vaadin.client"/>
       <plugin id="com.vaadin.client-compiled"/>
+      <plugin id="com.vaadin.external.org.slf4j"/>
       <plugin id="com.vaadin.server"/>
       <plugin id="com.vaadin.shared"/>
       <plugin id="com.vaadin.shared.deps"/>
@@ -107,6 +108,7 @@
       <plugin id="org.eclipse.equinox.preferences"/>
       <plugin id="org.eclipse.equinox.registry"/>
       <plugin id="org.eclipse.equinox.security"/>
+      <plugin id="org.eclipse.equinox.security.win32.x86_64" fragment="true"/>
       <plugin id="org.eclipse.equinox.simpleconfigurator"/>
       <plugin id="org.eclipse.equinox.simpleconfigurator.manipulator"/>
       <plugin id="org.eclipse.equinox.transforms.hook" fragment="true"/>
