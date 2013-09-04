@@ -26,11 +26,11 @@
 	<repositories>
 		<repository>
 			<id>semanticsoft-releases</id>
-			<url>http://semanticsoft.org:8080/archiva/repository/internal/</url>
+			<url>http://semanticsoft.org:8085/archiva/repository/internal/</url>
 		</repository>
 		<repository>
 			<id>semanticsoft-snapshots</id>
-			<url>http://semanticsoft.org:8080/archiva/repository/snapshots/</url>
+			<url>http://semanticsoft.org:8085/archiva/repository/snapshots/</url>
 		</repository>
 		<repository>
 			<id>lunifera</id>
