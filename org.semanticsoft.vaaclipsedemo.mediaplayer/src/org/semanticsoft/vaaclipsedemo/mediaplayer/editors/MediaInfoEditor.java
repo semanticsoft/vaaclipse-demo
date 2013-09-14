@@ -20,6 +20,7 @@ import com.vaadin.data.util.ObjectProperty;
 import com.vaadin.event.FieldEvents.TextChangeEvent;
 import com.vaadin.event.FieldEvents.TextChangeListener;
 import com.vaadin.ui.Component;
+import com.vaadin.ui.TextArea;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 
@@ -59,7 +60,7 @@ public class MediaInfoEditor extends MediaInfoBase
 	private MDirtyable dirtable;
 
 	private TextField name = new TextField();
-	private TextField description = new TextField();
+	private TextArea description = new TextArea();
 	private TextChangeListener textChangeListener = new TextChangeListener() {
 		
 		@Override
