@@ -41,6 +41,7 @@ public abstract class MediaInfoBase
 		if (grid == null)
 		{
 			grid = new GridLayout(2, 3);
+			grid.setMargin(true);
 			
 			int k = 0;
 			
@@ -67,9 +68,9 @@ public abstract class MediaInfoBase
 			grid.setColumnExpandRatio(1, 80);
 			
 			grid.setRowExpandRatio(k, 100);
-			grid.setRowExpandRatio(--k, 10);
+			grid.setRowExpandRatio(--k, 20);
 			if (--k >= 0)
-				grid.setRowExpandRatio(k, 10);
+				grid.setRowExpandRatio(k, 20);
 			
 			grid.setSizeFull();
 		}
