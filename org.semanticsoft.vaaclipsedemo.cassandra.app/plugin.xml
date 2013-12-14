@@ -24,6 +24,14 @@
                value="plugin_customization.ini">
          </property>
          <property
+               name="vaadin.productionMode"
+               value="true">
+         </property>
+         <property
+               name="vaadin.disable-xsrf-protection"
+               value="true">
+         </property>
+         <property
                name="startupForegroundColor"
                value="FFFFFF">
          </property>
