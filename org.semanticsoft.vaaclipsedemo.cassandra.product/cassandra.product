@@ -7,7 +7,7 @@
    </configIni>
 
    <launcherArgs>
-      <vmArgs>-Xmx1500m -server -Dorg.eclipse.equinox.http.jetty.context.path=/cassandra -Dorg.osgi.service.http.port=8081</vmArgs>
+      <vmArgs>-Xmx4000m -server -Dorg.eclipse.equinox.http.jetty.context.path=/cassandra -Dorg.osgi.service.http.port=8081</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
