@@ -58,6 +58,9 @@
       <children xsi:type="menu:Menu" xmi:id="_7fhxAFapEeK_Rb_dwjIffA" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.menu.views" label="View">
         <children xsi:type="menu:DirectMenuItem" xmi:id="_Cr5REFaqEeK_Rb_dwjIffA" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.directmenuitem.showView" label="Show View" tooltip="Show View" contributionURI="bundleclass://org.semanticsoft.vaaclipse.additions/org.semanticsoft.vaaclipse.additions.view.ShowViewHandler"/>
       </children>
+      <children xsi:type="menu:Menu" xmi:id="sshshsskhwkhewkh" elementId="org.semanticsoft.vaaclipsedemo.cassandra.menu.preferences" label="Window">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="ajahhqhabvgdgsjg" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.directmenuitem.showView" label="Show View" tooltip="Show View" contributionURI="bundleclass://org.lunifera.vaaclipse.ui.preferences.addon/org.lunifera.vaaclipse.ui.preferences.addon.OpenPreferencesDialogHandler"/>
+      </children>
       <children xsi:type="menu:Menu" xmi:id="_YEK7sFoXEeKnfsmaJ7gmMA" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.menu.help" label="Help">
         <children xsi:type="menu:DirectMenuItem" xmi:id="_czNdsFoXEeKnfsmaJ7gmMA" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.directmenuitem.0" label="Logged Users Count" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.cassandra.app/org.semanticsoft.vaaclipsedemo.cassandra.app.handlers.UsersCountHandler"/>
         <children xsi:type="menu:DirectMenuItem" xmi:id="_lC8fQFoXEeKnfsmaJ7gmMA" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.directmenuitem.0" label="About" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.cassandra.app/org.semanticsoft.vaaclipsedemo.cassandra.app.handlers.AboutHandler"/>
@@ -177,12 +180,37 @@
   <addons xmi:id="_LK0NgPZmEd-XstlTZ6nTXj" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
   <addons xmi:id="_LK0NgPZmEd-XstlTZ6nTXk" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
   <addons xmi:id="_uQD18BTeEeOYw4hhtVDyYw" elementId="org.eclipse.e4.ui.workbench.handlers.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="preferencesAddon" elementId="org.lunifera.vaaclipse.ui.preferences.addon" contributionURI="bundleclass://org.lunifera.vaaclipse.ui.preferences.addon/org.lunifera.vaaclipse.ui.preferences.addon.PreferencesAddon"/>
   <editorDescriptors xmi:id="_CLtRcFfkEeKUIKT1CIcS7g" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.partdescriptor.html" label="Html Editor" iconURI="platform:/plugin/org.semanticsoft.vaaclipsedemo.cassandra.app/img/html.png" tooltip="Html Editor" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.cassandra.app/org.semanticsoft.vaaclipsedemo.cassandra.app.editors.HtmlEditor" uriFilter="[^;]+\.html"/>
   <editorDescriptors xmi:id="_mgeScFlBEeKUIKT1CIcS7g" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.partdescriptor.xml" label="Xml Editor" iconURI="platform:/plugin/org.semanticsoft.vaaclipsedemo.cassandra.app/img/xml.png" tooltip="Xml Editor" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.cassandra.app/org.semanticsoft.vaaclipsedemo.cassandra.app.editors.XmlEditor" uriFilter="[^;]+\.(xml|e4xmi|product)"/>
   <editorDescriptors xmi:id="_FHJDFHKAHFJDUEHFGKLFJL" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.partdescriptor.java" label="Java Editor" iconURI="platform:/plugin/org.semanticsoft.vaaclipsedemo.cassandra.app/img/java.png" tooltip="Java Editor" closeable="true" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.cassandra.app/org.semanticsoft.vaaclipsedemo.cassandra.app.editors.JavaEditor" uriFilter="[^;]+\.java"/>
   <editorDescriptors xmi:id="_FLDDHHHHAAAAAAAAAAAAAA" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.partdescriptor.img" label="Image Viewer" iconURI="platform:/plugin/org.semanticsoft.vaaclipsedemo.cassandra.app/img/img.png" tooltip="Image Viewer" closeable="true" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.cassandra.app/org.semanticsoft.vaaclipsedemo.cassandra.app.editors.ImageView" uriFilter="[^;]+\.(?i)(jpg|png|gif|bmp)"/>
   <editorDescriptors xmi:id="_FJLDMMEMMELFLEKAHHHHHH" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.partdescriptor.text" label="Text Editor" iconURI="platform:/plugin/org.semanticsoft.vaaclipsedemo.cassandra.app/img/text.png" tooltip="Text Editor" closeable="true" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.cassandra.app/org.semanticsoft.vaaclipsedemo.cassandra.app.editors.TextEditor" uriFilter="[^;]+"/>
   
-  <preferencesCategories xmi:id="asdlfjlsdkfjlajlas" elementId="org.semanticsoft.vaaclipsedemo.preference.category.1" name="System"></preferencesCategories>
+  <preferencesCategories xmi:id="system1cat" elementId="org.semanticsoft.vaaclipsedemo.preference.category.system1" name="System1">
+  	<childCategories xmi:id="subsys11axdsafa" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="SubSystem11"></childCategories>
+  	<childCategories xmi:id="subsys12sfdsf" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="SubSystem12"></childCategories>
+  	<childCategories xmi:id="subsys13" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="SubSystem13"></childCategories>
+  </preferencesCategories>
+  <preferencesCategories xmi:id="sys2ljsldf" elementId="org.semanticsoft.vaaclipsedemo.preference.category.system2" name="System2">
+  	<childCategories xmi:id="subsys21asdfjal" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="SubSystem21"></childCategories>
+  	<childCategories xmi:id="subsys22aajsdfl" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="SubSystem22"></childCategories>
+  	<childCategories xmi:id="subsys23fad" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="SubSystem23"></childCategories>
+  </preferencesCategories>
+  
+  <preferencesCategories xmi:id="adminasdflsj" elementId="org.semanticsoft.vaaclipsedemo.preference.category.admin" name="Admin">
+  	<childCategories xmi:id="adminchild1" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="AdminChildCat1"></childCategories>
+  	<childCategories xmi:id="adminchild2" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="AdminChildCat2"></childCategories>
+  </preferencesCategories>
+  
+  <preferencesCategories xmi:id="financier" elementId="org.semanticsoft.vaaclipsedemo.preference.category.admin" name="Financier">
+  	<childCategories xmi:id="financierchild1" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="Financier Child 1"></childCategories>
+  	<childCategories xmi:id="financierchild2" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="Financier Child 2"></childCategories>
+  </preferencesCategories>
+  
+  <preferencesPages xmi:id="system1page" elementId="system1page" preferencesScope="/org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle1/system/system1" category="system1cat">
+  	<children xsi:type="preferences:BooleanFieldEditor" xmi:id="f1" elementId="org.semanticsoft.vaaclipsedemo.preference.page.f1" label="Boolean setting 1" preferenceName="setting1" />
+  	<children xsi:type="preferences:BooleanFieldEditor" xmi:id="f2" elementId="org.semanticsoft.vaaclipsedemo.preference.page.f2" label="Boolean setting 2" preferenceName="setting2" style="SEPARATE_LABEL" />
+  </preferencesPages>
   
 </e4modelextension:VaaclipseApplication>
