@@ -28,9 +28,13 @@
    </vm>
 
    <plugins>
+      <plugin id="ch.qos.logback.classic"/>
+      <plugin id="ch.qos.logback.core"/>
+      <plugin id="ch.qos.logback.slf4j" fragment="true"/>
       <plugin id="com.ibm.icu"/>
       <plugin id="com.vaadin.client"/>
       <plugin id="com.vaadin.client-compiled"/>
+      <plugin id="com.vaadin.external.org.slf4j"/>
       <plugin id="com.vaadin.server"/>
       <plugin id="com.vaadin.shared"/>
       <plugin id="com.vaadin.shared.deps"/>
@@ -89,8 +93,8 @@
       <plugin id="org.eclipse.osgi"/>
       <plugin id="org.eclipse.osgi.services"/>
       <plugin id="org.jsoup"/>
-      <plugin id="org.lunifera.dependencies.bundle.javax.portlet-api"/>
-      <plugin id="org.lunifera.dependencies.bundle.vaadin.addon.icepush"/>
+      <plugin id="org.lunifera.vaaclipse.ui.preferences.addon"/>
+      <plugin id="org.lunifera.vaaclipse.ui.preferences.model"/>
       <plugin id="org.semanticsoft.commons"/>
       <plugin id="org.semanticsoft.e4.injector.objectsuppliers"/>
       <plugin id="org.semanticsoft.e4extension"/>
@@ -110,6 +114,9 @@
       <plugin id="org.semanticsoft.vaaclipse.widgets"/>
       <plugin id="org.semanticsoft.vaaclipse.widgetset.default"/>
       <plugin id="org.semanticsoft.vaaclipsedemo.cassandra.app"/>
+      <plugin id="org.semanticsoft.vaaclipsedemo.cassandra.pref.api"/>
+      <plugin id="org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle1"/>
+      <plugin id="org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle2"/>
       <plugin id="org.semanticsoft.vaaclipsedemo.cassandra.widgetset"/>
       <plugin id="org.semanticsoft.vaadin"/>
       <plugin id="org.semanticsoft.vaadin.osgi.staticres"/>
@@ -118,7 +125,7 @@
 
    <configurations>
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
-      <plugin id="org.eclipse.e4.ui.services" autoStart="false" startLevel="1" />
+      <plugin id="org.eclipse.e4.ui.services" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.equinox.http.jetty" autoStart="true" startLevel="0" />

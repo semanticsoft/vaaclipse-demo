@@ -187,15 +187,15 @@
   <editorDescriptors xmi:id="_FLDDHHHHAAAAAAAAAAAAAA" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.partdescriptor.img" label="Image Viewer" iconURI="platform:/plugin/org.semanticsoft.vaaclipsedemo.cassandra.app/img/img.png" tooltip="Image Viewer" closeable="true" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.cassandra.app/org.semanticsoft.vaaclipsedemo.cassandra.app.editors.ImageView" uriFilter="[^;]+\.(?i)(jpg|png|gif|bmp)"/>
   <editorDescriptors xmi:id="_FJLDMMEMMELFLEKAHHHHHH" elementId="org.semanticsoft.vaaclipsedemo.cassandra.app.partdescriptor.text" label="Text Editor" iconURI="platform:/plugin/org.semanticsoft.vaaclipsedemo.cassandra.app/img/text.png" tooltip="Text Editor" closeable="true" contributionURI="bundleclass://org.semanticsoft.vaaclipsedemo.cassandra.app/org.semanticsoft.vaaclipsedemo.cassandra.app.editors.TextEditor" uriFilter="[^;]+"/>
   
-  <preferencesCategories xmi:id="system1cat" elementId="org.semanticsoft.vaaclipsedemo.preference.category.system1" name="System1">
-  	<childCategories xmi:id="subsys11axdsafa" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="SubSystem11"></childCategories>
-  	<childCategories xmi:id="subsys12sfdsf" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="SubSystem12"></childCategories>
-  	<childCategories xmi:id="subsys13" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="SubSystem13"></childCategories>
+  <preferencesCategories xmi:id="System-Bundle1" elementId="org.semanticsoft.vaaclipsedemo.preference.category.systembundle1" name="System-Bundle1">
+  	<childCategories xmi:id="subsys11axdsafa" elementId="org.semanticsoft.vaaclipsedemo.preference.category.subsystem1bundle1" name="Subsystem1-Bundle1"></childCategories>
+  	<childCategories xmi:id="subsys12sfdsf" elementId="org.semanticsoft.vaaclipsedemo.preference.category.subsystem2bundle1" name="Subsystem2-Bundle1"></childCategories>
+  	<childCategories xmi:id="subsys13" elementId="org.semanticsoft.vaaclipsedemo.preference.category.subsystem3bundle1" name="Subsystem3-Bundle1"></childCategories>
   </preferencesCategories>
-  <preferencesCategories xmi:id="sys2ljsldf" elementId="org.semanticsoft.vaaclipsedemo.preference.category.system2" name="System2">
-  	<childCategories xmi:id="subsys21asdfjal" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="SubSystem21"></childCategories>
-  	<childCategories xmi:id="subsys22aajsdfl" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="SubSystem22"></childCategories>
-  	<childCategories xmi:id="subsys23fad" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="SubSystem23"></childCategories>
+  <preferencesCategories xmi:id="System-Bundle2" elementId="org.semanticsoft.vaaclipsedemo.preference.category.systembundle2" name="System-Bundle2">
+  	<childCategories xmi:id="subsys21asdfjal" elementId="org.semanticsoft.vaaclipsedemo.preference.category.subsystem1bundle2" name="Subsystem1-Bundle2"></childCategories>
+  	<childCategories xmi:id="subsys22aajsdfl" elementId="org.semanticsoft.vaaclipsedemo.preference.category.subsystem2bundle2" name="Subsystem2-Bundle2"></childCategories>
+  	<childCategories xmi:id="subsys23fad" elementId="org.semanticsoft.vaaclipsedemo.preference.category.subsystem3bundle2" name="Subsystem3-Bundle2"></childCategories>
   </preferencesCategories>
   
   <preferencesCategories xmi:id="adminasdflsj" elementId="org.semanticsoft.vaaclipsedemo.preference.category.admin" name="Admin">
@@ -208,9 +208,24 @@
   	<childCategories xmi:id="financierchild2" elementId="org.semanticsoft.vaaclipsedemo.preference.category.2" name="Financier Child 2"></childCategories>
   </preferencesCategories>
   
-  <preferencesPages xmi:id="system1page" elementId="system1page" preferencesScope="/org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle1/system/system1" category="system1cat">
-  	<children xsi:type="preferences:BooleanFieldEditor" xmi:id="f1" elementId="org.semanticsoft.vaaclipsedemo.preference.page.f1" label="Boolean setting 1" preferenceName="setting1" />
-  	<children xsi:type="preferences:BooleanFieldEditor" xmi:id="f2" elementId="org.semanticsoft.vaaclipsedemo.preference.page.f2" label="Boolean setting 2" preferenceName="setting2" style="SEPARATE_LABEL" />
+  <preferencesPages xmi:id="system1page" elementId="system1page" preferencesScope="/org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle1/system" category="System-Bundle1" description="This page was layouted automatically. It is possible to provide custom page layout (see another pages)">
+  	<children xsi:type="preferences:BooleanFieldEditor" xmi:id="f1" elementId="org.semanticsoft.vaaclipsedemo.preference.page.f1" label="This is boolean attribute" preferenceName="b1.settings1" />
+  	<children xsi:type="preferences:BooleanFieldEditor" xmi:id="f2" elementId="org.semanticsoft.vaaclipsedemo.preference.page.f2" label="This is boolean attribute with style=SEPARATE_LABEL (text is located in rigth)" preferenceName="b1.settings2" style="SEPARATE_LABEL" />
+  	<children xsi:type="preferences:StringFieldEditor" xmi:id="f3" elementId="org.semanticsoft.vaaclipsedemo.preference.page.f2" label="This is string attribute" preferenceName="b1.settings3" />
+  </preferencesPages>
+  
+  <preferencesPages xmi:id="system2page" elementId="system2page" preferencesScope="/org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle2/system" category="System-Bundle2" description="This page was layouted automatically. It is possible to provide custom page layout (see another pages)">
+  	<children xsi:type="preferences:RadioGroupFieldEditor" xmi:id="f101" elementId="org.semanticsoft.vaaclipsedemo.preference.page.f101" label="This is RadioGroupFieldEditor attribute" preferenceName="b2.settings1" defaultValue="option2">
+  		<entries value="option1" name = "This is option 1"></entries>
+  		<entries value="option2" name = "This is option 2"></entries>
+  		<entries value="option3" name = "This is option 3"></entries>
+  	</children>
+  	<children xsi:type="preferences:ListEditor" xmi:id="f101" elementId="org.semanticsoft.vaaclipsedemo.preference.page.f101" label="This is ListEditor attribute" preferenceName="b2.settings1" defaultValue="option2">
+  		<entries value="option1" name = "This is option 1"></entries>
+  		<entries value="option2" name = "This is option 2"></entries>
+  		<entries value="option3" name = "This is option 3"></entries>
+  	</children>
+  	<children xsi:type="preferences:StringFieldEditor" xmi:id="f103" elementId="org.semanticsoft.vaaclipsedemo.preference.page.f103" label="This is string attribute" preferenceName="b2.settings3" />
   </preferencesPages>
   
 </e4modelextension:VaaclipseApplication>
