@@ -160,10 +160,23 @@
 			</build>
 			<modules>
 				<module>org.semanticsoft.vaaclipsedemo.target.kepler</module>
-				<module>org.semanticsoft.vaaclipse.widgets</module>
-				<module>org.semanticsoft.commons</module>
-				<module>org.semanticsoft.vaaclipse.vaadin.addon.dndlayout</module>
+				
+				<!-- exclusive for P2 -->
+				<module>org.semanticsoft.vaaclipsedemo.p2</module>
+				
+				<!-- P2 features -->
+				<module>org.semanticsoft.vaaclipsedemo.feature</module>
+				
+				<!-- Demo features -->
+				
+				<module>org.semanticsoft.vaaclipsedemo.cassandra.app</module>
+				<module>org.semanticsoft.vaaclipsedemo.cassandra.vaadinaddons</module>
 				<module>org.semanticsoft.vaaclipsedemo.cassandra.widgetset</module>
+				<module>org.semanticsoft.vaaclipsedemo.cassandra.product</module>
+				
+				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.api</module>
+				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle1</module>
+				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle2</module>
 			</modules>
 		</profile>
 	</profiles>

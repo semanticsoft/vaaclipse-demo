@@ -84,6 +84,10 @@
             beforefragment="true"
             class="org.semanticsoft.vaaclipsedemo.cassandra.app.processor.UsersCountProcessor">
       </processor>
+      <processor
+            beforefragment="true"
+            class="org.semanticsoft.vaaclipsedemo.cassandra.app.processor.PreferencesProcessor">
+      </processor>
    </extension>
    <extension
          point="org.semanticsoft.vaaclipse.theme">

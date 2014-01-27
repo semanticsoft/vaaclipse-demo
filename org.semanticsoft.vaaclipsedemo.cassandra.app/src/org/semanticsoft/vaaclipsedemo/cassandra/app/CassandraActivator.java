@@ -11,6 +11,9 @@
 
 package org.semanticsoft.vaaclipsedemo.cassandra.app;
 
+import java.util.Collection;
+import org.osgi.framework.ServiceReference;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -27,7 +30,9 @@ import org.eclipse.core.runtime.Platform;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
+import org.osgi.framework.InvalidSyntaxException;
 import org.semanticsoft.vaaclipsedemo.cassandra.app.user.UserCounter;
+import org.semanticsoft.vaaclipsedemo.cassandra.pref.api.ServiceWithPreferences;
 
 public class CassandraActivator implements BundleActivator
 {
@@ -39,6 +44,8 @@ public class CassandraActivator implements BundleActivator
 	
 	private UserCounter userCounter;
 	private Date startTime;
+	
+	ServiceWithPreferences serviceWithPreference1, serviceWithPreference2;
 
 	public void start(BundleContext context) throws Exception
 	{
@@ -49,6 +56,22 @@ public class CassandraActivator implements BundleActivator
 		
 		this.userCounter = new UserCounter();
 		this.startTime = new Date();
+		
+		obtainPreferencesServices();
+	}
+
+	private void obtainPreferencesServices() throws InvalidSyntaxException {
+		Collection<ServiceReference<ServiceWithPreferences>> ref = context.getServiceReferences(ServiceWithPreferences.class, null);
+		serviceWithPreference1 = context.getService(ref.iterator().next());
+		serviceWithPreference2 = context.getService(ref.iterator().next());
+	}
+	
+	public ServiceWithPreferences getServiceWithPreference1() {
+		return serviceWithPreference1;
+	}
+	
+	public ServiceWithPreferences getServiceWithPreference2() {
+		return serviceWithPreference2;
 	}
 
 	private void upackProjects() throws Exception

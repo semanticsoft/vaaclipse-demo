@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" name="org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle2.ServiceWithPreferences2Impl">
+   <implementation class="org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle2.ServiceWithPreferences2Impl"/>
+   <service>
+      <provide interface="org.semanticsoft.vaaclipsedemo.cassandra.pref.api.ServiceWithPreferences"/>
+   </service>
+   <property name="(provider" value="bundle2)"/>
+   <reference bind="bindPrefrencesService" cardinality="1..1" interface="org.osgi.service.prefs.PreferencesService" name="PrefrencesService" policy="static"/>
+</scr:component>

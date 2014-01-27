@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Api
+Bundle-SymbolicName: org.semanticsoft.vaaclipsedemo.cassandra.pref.api
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: org.semanticsoft.vaaclipsedemo.cassandra.pref.api
+Import-Package: org.osgi.service.prefs
