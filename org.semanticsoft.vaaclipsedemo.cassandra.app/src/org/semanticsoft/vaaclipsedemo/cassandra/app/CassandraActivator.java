@@ -61,9 +61,14 @@ public class CassandraActivator implements BundleActivator
 	}
 
 	private void obtainPreferencesServices() throws InvalidSyntaxException {
-		Collection<ServiceReference<ServiceWithPreferences>> ref = context.getServiceReferences(ServiceWithPreferences.class, null);
-		serviceWithPreference1 = context.getService(ref.iterator().next());
-		serviceWithPreference2 = context.getService(ref.iterator().next());
+		Collection<ServiceReference<ServiceWithPreferences>> refList = context.getServiceReferences(ServiceWithPreferences.class, null);
+		
+		for (ServiceReference<ServiceWithPreferences> ref : refList) {
+			if (ref.getBundle().getSymbolicName().contains("bundle1"))
+				serviceWithPreference1 = context.getService(ref);
+			else
+				serviceWithPreference2 = context.getService(ref);
+		}
 	}
 	
 	public ServiceWithPreferences getServiceWithPreference1() {
