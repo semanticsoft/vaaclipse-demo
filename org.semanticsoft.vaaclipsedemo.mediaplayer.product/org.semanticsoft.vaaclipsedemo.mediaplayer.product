@@ -123,8 +123,8 @@
       <plugin id="org.eclipse.osgi"/>
       <plugin id="org.eclipse.osgi.services"/>
       <plugin id="org.jsoup"/>
-      <plugin id="org.lunifera.dependencies.bundle.javax.portlet-api"/>
-      <plugin id="org.lunifera.dependencies.bundle.vaadin.addon.icepush"/>
+      <plugin id="org.lunifera.vaaclipse.ui.preferences.addon"/>
+      <plugin id="org.lunifera.vaaclipse.ui.preferences.model"/>
       <plugin id="org.sat4j.core"/>
       <plugin id="org.sat4j.pb"/>
       <plugin id="org.semanticsoft.commons"/>

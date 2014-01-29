@@ -12,9 +12,8 @@
 <repository location="http://download.eclipse.org/releases/kepler"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.lunifera.dependencies.feature.vaadin.addon.icepush.feature.group" version="0.5.5"/>
-<unit id="org.lunifera.dependencies.feature.vaadin.feature.group" version="7.1.7"/>
-<repository location="http://lun.lunifera.org/downloads/p2/lunifera/luna/latest/"/>
+<unit id="org.lunifera.dependencies.feature.vaadin.feature.group" version="7.1.8"/>
+<repository location="http://developer.bazon.ru/turtle/luna-latest/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.apache.commons.io" version="2.0.1.v201105210651"/>
@@ -22,7 +21,7 @@
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20120526062928/repository"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.semanticsoft.vaaclipse.feature.runtime.core.feature.group" version="1.0.0.201312141602"/>
+<unit id="org.semanticsoft.vaaclipse.feature.runtime.core.feature.group" version="1.0.0.201401290423"/>
 <repository location="http://95.78.127.1/vaaclipse-tp/"/>
 </location>
 </locations>
