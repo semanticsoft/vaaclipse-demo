@@ -77,35 +77,40 @@ public class PreferencesView {
 		Preferences admin1 = sp1.getUserPrefrences("admin");
 		Preferences admin2 = sp2.getUserPrefrences("admin");
 		
-		
+		vl.addComponent(new Label("Below there are preferences values. To edit this preferences follow Window/Preferences. For each key displayed the bundle where this key is stored<br/><br/>", Label.CONTENT_XHTML));
 		
 		addText("system", 
 				new String[] {"generatereport", "savestat", "sysprefix"},
-				new Preferences[] {system1, system2, system1}
+				new Preferences[] {system1, system2, system1},
+				new String[] {"bundle1", "bundle2", "bundle1"}
 			);
 		
 		addText("memory", 
 				new String[] {"enablecache", "maxpg", "xmx"},
-				new Preferences[] {system1.node("memory"), system2.node("memory"), system1.node("memory")}
+				new Preferences[] {system1.node("memory"), system2.node("memory"), system1.node("memory")},
+				new String[] {"bundle1", "bundle2", "bundle1"}
 			);
 		
 		addText("performance", 
 				new String[] {"threadpool", "options", "cpupolicy"},
-				new Preferences[] {system1.node("performance"), system2.node("performance"), system1.node("performance")}
+				new Preferences[] {system1.node("performance"), system2.node("performance"), system1.node("performance")},
+				new String[] {"bundle1", "bundle2", "bundle1"}
 			);
 		
 		addText("admin", 
 				new String[] {"monitor"},
-				new Preferences[] {admin1}
+				new Preferences[] {admin1},
+				new String[] {"bundle1"}
 			);
 	}
 	
-	void addText(String category, String[] keys, org.osgi.service.prefs.Preferences[] prefs) {
+	void addText(String category, String[] keys, org.osgi.service.prefs.Preferences[] prefs, String[] bundleNames) {
 		String str = "";
 		for (int i = 0; i < keys.length; i++) {
 			String key = keys[i];
 			String value = prefs[i].get(key, "no");
-			str += String.format("&nbsp;&nbsp;&nbsp;&nbsp;key=%s, value = %s;<br/>", key, value);
+			String bundle = bundleNames[i];
+			str += String.format("&nbsp;&nbsp;&nbsp;&nbsp;key=%s, value = %s (%s)<br/>", key, value, bundle);
 		}
 		if (str.isEmpty())
 			str = "no page";
