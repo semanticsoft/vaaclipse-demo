@@ -21,7 +21,7 @@
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20120526062928/repository"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.semanticsoft.vaaclipse.feature.runtime.core.feature.group" version="1.0.0.201401290601"/>
+<unit id="org.semanticsoft.vaaclipse.feature.runtime.core.feature.group" version="1.0.0.201401290952"/>
 <repository location="http://95.78.127.1/vaaclipse-tp/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
